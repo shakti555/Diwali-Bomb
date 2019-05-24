@@ -1,0 +1,96 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.gms.ads.AdView
+                    xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="ca-app-pub-7789329977567615/5101932147">
+                </com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/cent"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginTop="-40dp"
+            >
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:src="@drawable/bomb"
+        android:layout_marginTop="150dp"
+        android:id="@+id/bomb1"
+        />
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="150dp"
+            android:layout_weight="1"
+            android:src="@drawable/rocke"
+            android:id="@+id/bomb2"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/chatai"
+            android:id="@+id/bomb3"
+            android:layout_marginTop="150dp"
+
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@drawable/itom"
+            android:id="@+id/bomb4"
+            android:layout_marginTop="150dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+<Button
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:text="Click Here For More Crackers"
+    android:id="@+id/more"
+    android:background="@drawable/back"
+    android:layout_gravity="center"
+
+  android:textColor="#fff"
+
+    />
+            </LinearLayout>
+</ScrollView>
+    </LinearLayout>
+
